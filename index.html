@@ -4,8 +4,7 @@
 	<meta charset="utf-8">
 		<title>RIP Flash</title>
 	<style>
-		.flash 
-		{
+		.flash {
 			margin: 0;
 			position: absolute;
 			padding: 0;
@@ -13,11 +12,30 @@
 			left: 50%;
 			transform: translate(-50%,-50%);
 		}
+		.bottom {
+			width: 100%;
+			margin: 10px;
+			position: fixed;
+			padding: 0;
+			bottom: 0;
+			text-align: center;
+			font-size: small;
+		}
+		.bottom a {
+			color: #999;
+			text-decoration: none;
+		}
+		.bottom a:hover {
+			color: #666;
+		}
 	</style>
 </head>
 <body>
 	<div class="flash">
 		<embed src="startup.swf" width="960" height="160"></embed>
+	</div>
+	<div class="bottom">
+		<a href="h5/">本页面的 HTML5 Canvas 版本预览</a>
 	</div>
 </body>
 </html>
